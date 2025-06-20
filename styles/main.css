@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Berrylicious';
-  src: url('../fonts/Berrylicious-Light.ttf') format('truetype');
+  font-family: 'MevaraTrial';
+  src: url('../fonts/MevaraTrial-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Precious';
-  src: url('../fonts/Precious.ttf') format('truetype');
+  font-family: 'Hello';
+  src: url('../fonts/Hello.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,11 +19,11 @@
 }
 
 body {
-  font-family: 'Berrylicious', Georgia, serif;
-  color: #3e2f1c;
+  font-family: 'MevaraTrial', serif;
   line-height: 1.6;
+  font-size: 16px;
   margin: 0;
-  background-color: #3e2f1c;
+  background-color: #7a6f6d;
 }
 .site-background {
   display: flex;
@@ -38,16 +38,19 @@ body {
 }
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   padding: 2rem 0;
 }
 header h1 {
+  width: 300px;
   font-size: 2.5rem;
-  color: #a0522d;
-}
-header p {
-  font-size: 1.2rem;
-  color: #3e2f1c;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #302622;
 }
 
 .gallery {
@@ -55,7 +58,6 @@ header p {
 }
 .gallery h2 {
   text-align: center;
-  color: #a0522d;
   margin-bottom: 1rem;
 }
 .gallery .grid {
@@ -67,8 +69,7 @@ header p {
 .gallery .grid img {
   height: 546px;
   object-fit: cover;
-  border: 4px solid #d2b48c;
-  background-color: #ffffff;
+  border: 4px solid #9d8e7f;
 }
 .gallery .grid img:nth-child(1) {
   width: 40%;
@@ -89,11 +90,7 @@ header p {
   text-align: center;
 }
 .about h2 {
-  color: #a0522d;
   margin-bottom: 1rem;
-}
-.about p {
-  font-size: 1rem;
 }
 
 .social {
@@ -101,15 +98,13 @@ header p {
   padding: 2rem;
   margin-top: 3rem;
   text-align: center;
-  border-top: 2px solid #a0522d;
+  border-top: 2px solid #302622;
 }
 .social h2 {
-  color: #a0522d;
   margin-bottom: 0.5rem;
 }
 .social p {
   margin-bottom: 1rem;
-  color: #3e2f1c;
 }
 .social ul {
   list-style: none;
@@ -120,7 +115,6 @@ header p {
   margin: 0 1rem;
 }
 .social a {
-  color: #a0522d;
   text-decoration: none;
   font-weight: bold;
 }
@@ -132,18 +126,16 @@ header h1,
 .about h2,
 .gallery h2,
 .social h2 {
-  font-family: 'Precious', Georgia, serif;
+  font-family: "Hello", serif;
+  color: #302622;
 }
 
 footer {
   background-color: #f1e6d6;
   text-align: center;
-  font-size: 0.9rem;
   padding: 1rem 0;
-  color: #3e2f1c;
 }
 footer a {
-  color: #a0522d;
   text-decoration: none;
 }
 
@@ -174,11 +166,6 @@ footer a {
 
   header h1 {
     font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1rem;
-    padding: 0 1rem;
   }
 
   .about {
