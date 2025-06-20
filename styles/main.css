@@ -22,7 +22,8 @@ body {
   font-family: 'MevaraTrial', serif;
   line-height: 1.6;
   font-size: 16px;
-  margin: 0;
+  margin: 0;  
+  text-align: center;
   background-color: #7a6f6d;
 }
 .site-background {
@@ -42,8 +43,11 @@ header {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
+  align-items: center;  
+  text-align: center;
+  padding-top: 2rem;
+ 
+  margin-bottom: 2rem;
 }
 header h1 {
   width: 300px;
@@ -124,8 +128,7 @@ header h1 {
 
 header h1,
 .about h2,
-.gallery h2,
-.social h2 {
+.gallery h2 {
   font-family: "Hello", serif;
   color: #302622;
 }
@@ -142,11 +145,11 @@ footer a {
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
-    padding: 2rem;
     padding-bottom: 0rem;
   }
 
-  .gallery .grid {
+  .gallery .grid {    
+    padding: 2rem;
     flex-direction: column;
     align-items: center;
   }
@@ -164,6 +167,9 @@ footer a {
     width: 100%;
   }
 
+  header {
+    margin-bottom: 0.01rem;
+  }
   header h1 {
     font-size: 2rem;
   }
