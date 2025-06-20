@@ -1,10 +1,25 @@
+@font-face {
+  font-family: 'Berrylicious';
+  src: url('../fonts/Berrylicious-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Precious';
+  src: url('../fonts/Precious.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Georgia", serif;
+  font-family: 'Berrylicious', Georgia, serif;
   color: #3e2f1c;
   line-height: 1.6;
   margin: 0;
@@ -113,6 +128,13 @@ header p {
   text-decoration: underline;
 }
 
+header h1,
+.about h2,
+.gallery h2,
+.social h2 {
+  font-family: 'Precious', Georgia, serif;
+}
+
 footer {
   background-color: #f1e6d6;
   text-align: center;
@@ -128,7 +150,8 @@ footer a {
 @media (max-width: 768px) {
   .container {
     max-width: 100%;
-    padding: 1rem;
+    padding: 2rem;
+    padding-bottom: 0rem;
   }
 
   .gallery .grid {
@@ -138,7 +161,7 @@ footer a {
 
   .gallery .grid img {
     width: 100%;
-    height: auto; /* opcional: remove se quiser manter altura fixa */
+    height: auto;
     max-width: 100%;
   }
 
@@ -146,7 +169,7 @@ footer a {
   .gallery .grid img:nth-child(2),
   .gallery .grid img:nth-child(3),
   .gallery .grid img:nth-child(4) {
-    width: 100%; /* garante full width no mobile */
+    width: 100%;
   }
 
   header h1 {
