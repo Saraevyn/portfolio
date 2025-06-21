@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'Hello';
-  src: url('../fonts/Hello.ttf') format('truetype');
+  font-family: 'Canesa Regular';
+  src: url('../fonts/Canesa Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -126,7 +126,7 @@ header h1,
 .about h2,
 .gallery h2,
 .social h2 {
-  font-family: "Hello", serif;
+  font-family: "Canesa Regular", serif;
   color: #302622;
 }
 
@@ -135,8 +135,20 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
-footer a {
+
+a {
+  color: #a0522d;
   text-decoration: none;
+}
+a:visited {
+  color: #a0522d;
+}
+a:hover {
+  text-decoration: underline;
+  color: #6d3b1f;
+}
+a:active {
+  color: #5a2d18;
 }
 
 @media (max-width: 768px) {
